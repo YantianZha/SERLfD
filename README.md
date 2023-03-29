@@ -11,10 +11,9 @@ In this paper, we present an algorithm that iteratively learning to self-explain
 </p>
 <p align="left">
     <img src="figures/SERL_gif_1.gif" alt="envs" width="400" />
-</p>
-<p align="right">
     <img src="figures/SERL_gif_2.gif" alt="envs" width="400" />
 </p>
+
 
 ## Installation
 
