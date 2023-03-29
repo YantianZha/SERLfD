@@ -71,7 +71,7 @@ If you find our paper or code is useful, please consider citing:
 @article{yantian-self-expl,
   title={Learning from Ambiguous Demonstrations with Self-Explanation Guided Reinforcement Learning},
   author={Zha, Yantian and Guan, Lin and Kambhampati, Subbarao},
-  journal={AAAI-22 Workshop on Reinforcement Learning in Games and arXiv preprint arXiv:2110.05286},
+  journal={AAAI-22 Workshop on Reinforcement Learning in Games},
   year={2021}
 }
 ```
