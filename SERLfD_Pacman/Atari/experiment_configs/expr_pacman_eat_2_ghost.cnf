@@ -1,0 +1,26 @@
+[DEFAULT]
+# (Deprecated) Number of games to run
+numGames    =   1
+# Layout of the environment
+layout      =   smallClassic
+# Type of pacman (default proxy agent)
+pacman      =   ProxyAgent
+# Whether to use graphic output
+graphicsOutput =   True
+# Whether to use efficient output
+efficientGraphics = True
+# Type of ghosts
+ghost       =   RandomGhost
+# Number of ghost
+numGhosts   =   2
+# Zoom the size of the graphics window
+zoom        =   0.3
+# Time (second) between each two consecutive frames
+frameTime   =   0
+# (deprecated) Whether to save game record (can be used to record demonstration)
+record      =   False
+
+[CUSTOMIZE]
+layout      =   smallClassic
+frameTime   =   0.1
+numGhosts   =   2
