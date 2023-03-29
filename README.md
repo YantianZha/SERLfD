@@ -78,7 +78,7 @@ The `--render` flag indicates whether to export the video of the task execution.
 ## Results
 
 <p align="center">
-    <img src="figures/result_robot.png" alt="envs" width="1000" />
+    <img src="figures/result_robot.PNG" alt="envs" width="1000" />
 </p>
 
 
