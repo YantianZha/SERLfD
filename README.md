@@ -38,42 +38,18 @@ In this paper, we present an algorithm that iteratively learning to self-explain
 
 ## Training
 
-Running the following commands in `examples` folder allows to train Ant with SHAC.
-```
-python train_shac.py --cfg ./cfg/shac/ant.yaml --logdir ./logs/Ant/shac
-```
+#### TD3fD+SE and SACfD+SE (Our Method)
 
-We also provide a one-line script in the `examples/train_script.sh` folder to replicate the results reported in the paper for both our method and for baseline method. The results might slightly differ from the paper due to the randomness of the cuda and different Operating System/GPU/Python versions. The plot reported in paper is produced with TITAN X on Ubuntu 16.04.
+For example, running the following commands allows to train TD3fD and SACfD augmented with using self-explanations.
 
-#### SHAC (Our Method)
-
-For example, running the following commands in `examples` folder allows to train Ant and SNU Humanoid (Humanoid MTU in the paper) environments with SHAC respectively for 5 individual seeds.
-
-```
-python train_script.py --env Ant --algo shac --num-seeds 5
-```
-
-```
-python train_script.py --env SNUHumanoid --algo shac --num-seeds 5
-```
 
 #### Baseline Algorithms
 
-For example, running the following commands in `examples` folder allows to train Ant environment with PPO implemented in RL_games for 5 individual seeds,
+For example, running the following commands allows to train baseline RLfD agents,
 
 ```
-python train_script.py --env Ant --algo ppo --num-seeds 5
+python 
 ```
-
-## Testing
-
-To test the trained policy, you can input the policy checkpoint into the training script and use a `--play` flag to indicate it is for testing. For example, the following command allows to test a trained policy (assume the policy is located in `logs/Ant/shac/policy.pt`)
-
-```
-python train_shac.py --cfg ./cfg/shac/ant.yaml --checkpoint ./logs/Ant/shac/policy.pt --play [--render]
-```
-
-The `--render` flag indicates whether to export the video of the task execution. If does, the exported video is encoded in `.usd` format, and stored in the `examples/output` folder. To visualize the exported `.usd` file, refer to [USD at NVIDIA](https://developer.nvidia.com/usd).
 
 ## Results
 
