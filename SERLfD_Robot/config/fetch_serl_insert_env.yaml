@@ -1,0 +1,68 @@
+fetch: #namespace
+
+    # Fetch Task Realated parameters
+    n_actions: 10 #
+    # # # linear.x, linear.y, angular.z, wrist_roll, wrist_flex, forearm_roll, elbow_flex, upperarm_roll, shoulder_lift, shoulder_pan, torso_lift, gripper_close
+    n_observations: 1 # An image
+    max_iterations: 20
+
+    init_pos: # Use Fetch tuck arm joint values: http://docs.ros.org/indigo/api/fetch_teleop/html/tuck__arm_8py_source.html
+      bellows_joint: 0.0
+      head_pan_joint: 0.0
+      head_tilt_joint: 0.9
+      l_gripper_finger_joint: 0.04
+      r_gripper_finger_joint: 0.04
+      torso_lift_joint: 0.05
+      shoulder_pan_joint: 0.0
+      shoulder_lift_joint: 0.0
+      upperarm_roll_joint: 0.0
+      elbow_flex_joint: 0.0
+      forearm_roll_joint: 0.0
+      wrist_flex_joint: 0.0
+      wrist_roll_joint: 0.0
+      l_wheel_joint: 0.0
+      r_wheel_joint: 0.0
+
+    group_name: "arm" #"arm_with_torso"
+
+    gripper_min_dist: 0.03
+    gripper_max_dist: 0.08
+    gripper_max_effort: 10.0
+
+    exe_single_group: False
+    exe_group_num: 2
+
+env:
+    inserted_objs:
+        insert_task_block_1: []
+        insert_task_block_2: []
+
+    inserted_obj_width: 0.04
+    target_region:
+        cube1: [[0.547, 0.563], [0.092, 0.104], [0.445, 0.455]]
+        cylinder1: [[0.547, 0.563], [-0.093, -0.077], [0.445, 0.455]]
+
+    reached_goal_reward: 50.0
+
+    render: True # Use RGB observations
+    merge_simple_states_to_img: True # Expand image with one more dimension of predicates and padded zeros
+
+    predicates:
+        inserted:
+            is_cube1_insertedTo_block1: ['cube1', 'insert_task_block_1', [0.0354, 0.0354, 0.05]] # offsets.x and offsets.y are (dim_insert/2)/sqrt(2)
+            is_cube1_insertedTo_block2: ['cube1', 'insert_task_block_2', [0.0354, 0.0354, 0.05]]
+            is_cylinder1_insertedTo_block1: ['cylinder1', 'insert_task_block_1', [0.0354, 0.0354, 0.05]]
+            is_cylinder1_insertedTo_block2: ['cylinder1', 'insert_task_block_2', [0.0354, 0.0354, 0.05]]
+        grasped:
+            is_get_cube1: ['cube1']
+            is_get_cylinder1: ['cylinder1']
+
+    predicates_list: ["is_get_cube1", "is_get_cylinder1", "is_cube1_insertedTo_block1", "is_cube1_insertedTo_block2", "is_cylinder1_insertedTo_block1", "is_cylinder1_insertedTo_block2"]
+    done_predicates: ['is_cube1_insertedTo_block2', 'is_cylinder1_insertedTo_block1']
+    predicate_true_value: 1.0
+    predicate_false_value: -1.0
+
+    num_simple_states: 47
+#    goal_pos: # This has to be validated in the fetch_moveit_test.py in fetch_openai_ros_example or something that tests this pos is possible
+#      x: 2.0
+#      y: 0.0
