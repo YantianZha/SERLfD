@@ -22,7 +22,7 @@ In this paper, we present an algorithm that iteratively learning to self-explain
     <img src="figures/SERL_gif_10.gif" alt="envs" width="500" />
 </p>
 <p align="center">
-    <img src="figures/SERL_gif_Pacman.gif" alt="envs" width="800" />
+    <img src="figures/SERL_gif_Pacman.gif" alt="envs" width="600" />
 </p>
 
 ## Installation
