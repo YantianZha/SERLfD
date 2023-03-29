@@ -7,7 +7,7 @@ This repository contains the implementation for the paper [Learning from Ambiguo
 In this paper, we present an algorithm that iteratively learning to self-explain potentially ambiguous demonstrations thorough a shared vocabulary with humans, and a policy to accomplish tasks specified by demonstrations. We provide a comprehensive evaluation over three continuous robot control domains and one discrete Pacman domain. 
 
 <p align="center">
-    <img src="figures/intro_arch2.pdf.pdf" alt="envs" width="800" />
+    <img src="figures/env.png" alt="envs" width="800" />
 </p>
 
 ## Installation
@@ -24,38 +24,16 @@ In this paper, we present an algorithm that iteratively learning to self-explain
 - In the project folder, create a virtual environment in Anaconda:
 
   ```
-  conda env create -f diffrl_conda.yml
-  conda activate shac
+  conda env create -f SERLfD.yml
+  conda activate SERLfD
   ```
 
-- dflex
+- SERLfD
 
   ```
-  cd dflex
+  cd SERLfD
   pip install -e .
   ```
-
-- rl_games, forked from [rl-games](https://github.com/Denys88/rl_games) (used for PPO and SAC training):
-
-  ````
-  cd externals/rl_games
-  pip install -e .
-  ````
-
-- Install an older version of protobuf required for TensorboardX:
-  ````
-  pip install protobuf==3.20.0
-  ````
-
-#### Test Examples
-
-A test example can be found in the `examples` folder.
-
-```
-python test_env.py --env AntEnv
-```
-
-If the console outputs `Finish Successfully` in the last line, the code installation succeeds.
 
 
 ## Training
