@@ -1,0 +1,7 @@
+gym
+# gym['Box2D']
+numpy
+torch==0.4.1
+typing
+wandb
+matplotlib

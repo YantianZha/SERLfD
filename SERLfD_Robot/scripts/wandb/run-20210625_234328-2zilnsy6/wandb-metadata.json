@@ -1,0 +1,39 @@
+{
+    "root": "/home/yzha3/Research/kair_algorithms_draft_CoRL",
+    "program": "run_fetch_push_v2p.py",
+    "git": {
+        "remote": "https://github.com/kairproject/kair_algorithms_draft.git",
+        "commit": "18d6824191514c50b6737df8eb53d476dce7c96f"
+    },
+    "email": null,
+    "startedAt": "2021-06-26T06:43:28.642755",
+    "host": "c108951",
+    "username": "yzha3",
+    "executable": "/opt/anaconda/serl/bin/python3",
+    "os": "Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core",
+    "python": "3.6.12",
+    "gpu": "Quadro RTX 8000",
+    "gpu_count": 8,
+    "cpu_count": 80,
+    "cuda": "10.0.130",
+    "args": [
+        "--algo",
+        "sesacfd_v2_nrs_s",
+        "--mode",
+        "DIRECT",
+        "--episode-num",
+        "3000",
+        "--off-render",
+        "--max-episode-steps",
+        "50",
+        "--demo-path",
+        "/data/datasets/SERL/Fetch/Push-v2",
+        "--log"
+    ],
+    "state": "killed",
+    "jobType": null,
+    "mode": "run",
+    "project": "kair_algorithms_draft_CoRL-scripts",
+    "heartbeatAt": "2021-06-26T06:44:42.586619",
+    "exitcode": 255
+}
