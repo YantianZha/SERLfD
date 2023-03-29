@@ -81,7 +81,13 @@ The `--render` flag indicates whether to export the video of the task execution.
     <img src="figures/result_robot.PNG" alt="envs" width="1000" />
 </p>
 
-
+<div class="col-sm-6 col-xs-6">
+  <p><font size="+1"> Self-Explanation Guided Robot Learning</font></p>
+  <br />
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w5nGYOdVMiA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </iframe>
+</div>
+        
 ## Citation
 
 If you find our paper or code is useful, please consider citing:
