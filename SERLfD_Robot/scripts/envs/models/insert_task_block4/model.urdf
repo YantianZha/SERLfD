@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<robot name="insert_task_block4">
+  <link name="insert_task_block4_link">
+    <inertial>
+      <mass value="3.3"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="4.51" ixy="0.0" ixz="0.0" iyy="4.51" iyz="0.0" izz="4.51"/>
+    </inertial>
+    <collision name="insert_task_block4__collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://meshes/insert_task_block4.dae" scale="1 1 0"/>
+      </geometry>
+    </collision>
+    <visual name="insert_task_block4__visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://meshes/insert_task_block4.dae" scale="1 1 0"/>
+      </geometry>
+      <material name="blockmat">
+        <color rgba="1.0 0.773 0.025 1"/>
+      </material>
+    </visual>
+  </link>
+</robot>

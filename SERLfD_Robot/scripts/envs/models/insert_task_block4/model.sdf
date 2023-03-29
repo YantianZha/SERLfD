@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<sdf version='1.5'>
+  <model name="insert_task_block4">
+    <static>true</static>
+      <link name='link'>
+        <inertial>
+        <pose>0 0 0 0 0 0</pose>
+          <mass>3.3</mass>
+          <inertia>
+            <ixx>4.51</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>4.51</iyy>
+            <iyz>0.0</iyz>
+            <izz>4.51</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+        <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://insert_task_block4/meshes/insert_task_block4.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+            <surface>
+            <friction>
+              <ode>
+                <mu>40.0</mu>
+                <mu2>40.0</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://insert_task_block4/meshes/insert_task_block4.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <gravity>1</gravity>
+      </link>   
+  </model>
+</sdf>
