@@ -75,6 +75,13 @@ python train_shac.py --cfg ./cfg/shac/ant.yaml --checkpoint ./logs/Ant/shac/poli
 
 The `--render` flag indicates whether to export the video of the task execution. If does, the exported video is encoded in `.usd` format, and stored in the `examples/output` folder. To visualize the exported `.usd` file, refer to [USD at NVIDIA](https://developer.nvidia.com/usd).
 
+## Results
+
+<p align="center">
+    <img src="figures/result_robot.png" alt="envs" width="1000" />
+</p>
+
+
 ## Citation
 
 If you find our paper or code is useful, please consider citing:
