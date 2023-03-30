@@ -10,16 +10,16 @@ In this paper, we present an algorithm that iteratively learning to self-explain
     <img src="figures/env.png" alt="envs" width="800" />
 </p>
 <p align="center">
-    <img src="figures/SERL_gif_1.gif" alt="envs" width="500" />
-    <img src="figures/SERL_gif_2.gif" alt="envs" width="500" />
+    <img src="figures/SERL_gif_1.gif" alt="envs" width="450" />
+    <img src="figures/SERL_gif_2.gif" alt="envs" width="450" />
 </p>
 <p align="center">
-    <img src="figures/SERL_gif_3.gif" alt="envs" width="500" />
-    <img src="figures/SERL_gif_4.gif" alt="envs" width="500" />
+    <img src="figures/SERL_gif_3.gif" alt="envs" width="450" />
+    <img src="figures/SERL_gif_4.gif" alt="envs" width="450" />
 </p>
 <p align="center">
-    <img src="figures/SERL_gif_9.gif" alt="envs" width="500" />
-    <img src="figures/SERL_gif_10.gif" alt="envs" width="500" />
+    <img src="figures/SERL_gif_9.gif" alt="envs" width="450" />
+    <img src="figures/SERL_gif_10.gif" alt="envs" width="450" />
 </p>
 <p align="center">
     <img src="figures/SERL_gif_Pacman.gif" alt="envs" width="600" />
