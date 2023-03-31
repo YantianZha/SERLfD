@@ -29,6 +29,8 @@ In this paper, we present an algorithm that iteratively learning to self-explain
 
 - `git clone https://github.com/YantianZha/SERLfD.git`
 
+- Download the demonstrations from [here](https://drive.google.com/drive/folders/18_PAerU15nanE3PMuu-eInZCKIosEN4F?usp=share_link).
+
 - The code has been tested on 
   - Operating System: Ubuntu 18.04, CentOS 7
   - Python Version: 3.7, 3.8
