@@ -49,7 +49,6 @@ In this paper, we present an algorithm that iteratively learning to self-explain
 
   ```
   cd SERLfD
-  pip install -e .
   ```
 
 
@@ -65,7 +64,12 @@ For example, running the following commands allows to train TD3fD and SACfD augm
 For example, running the following commands allows to train baseline RLfD agents,
 
 ```
-python 
+CUDA_VISIBLE_DEVICES=1 nohup python3 run_fetch_push_v0p.py --algo sacfd --episode-num 3000 --off-render --max-episode-steps 50 --demo-path /data/Yantian/datasets/SERL/Fetch/Push-v0 --log > /data/Yantian/nohup_sacfd.out &
+```
+
+#### RLfD+SE Algorithms
+```
+CUDA_VISIBLE_DEVICES=1 nohup python3 run_fetch_push_v0p.py --algo sesacfd_v2_s --episode-num 3000 --off-render --max-episode-steps 50 --demo-path /data/Yantian/datasets/SERL/Fetch/Push-v0 --log > /data/Yantian/nohup_sesacfd_v2_s.out &
 ```
 
 ## Results
