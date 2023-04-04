@@ -34,6 +34,8 @@ In this paper, we present an algorithm that iteratively learning to self-explain
 - The code has been tested on 
   - Operating System: Ubuntu 18.04, CentOS 7
   - Python Version: 3.7, 3.8
+  - gym version <= 0.25.2
+  - numpy version == 1.20.1
   - GPU: RTX 1080, RTX 3080
 
 #### Prerequisites
