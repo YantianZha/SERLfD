@@ -27,7 +27,7 @@ SERLfD seamlessly integrates the strengths of Reinforcement Learning from Demons
 
 ### Architecture
 <p align="center">
-    <img src="figures/SERLfD_arch.png" alt="envs" width="300" />
+    <img src="figures/SERLfD_arch.png" alt="envs" width="500" />
 </p>
 
 - **Components:**
