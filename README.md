@@ -19,7 +19,7 @@ SERLfD seamlessly integrates the strengths of Reinforcement Learning from Demons
 ### Self-Explanation Mechanism
 
 - **Objective:** SERLfD supports RLfD by simultaneously learning to identify task-relevant domain predicates for each task step.
-- **Implementation:** The self-explanation mechanism involves training a Self-Explanation Network (SE-Net) to predict predicate utility weights (\textbf{\textit{u}}) that quantify the relevance of domain predicates at a given state.
+- **Implementation:** The self-explanation mechanism involves training a Self-Explanation Network (SE-Net) to predict predicate utility weights (**_u_**) that quantify the relevance of domain predicates at a given state.
 
 ### Learning Components
 
@@ -166,7 +166,15 @@ If you find our paper or code is useful, please consider citing:
 @article{yantian-self-expl,
   title={Learning from Ambiguous Demonstrations with Self-Explanation Guided Reinforcement Learning},
   author={Zha, Yantian and Guan, Lin and Kambhampati, Subbarao},
-  journal={AAAI24 Main Track and AAAI-22 Workshop on Reinforcement Learning in Games},
+  journal={In Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2024}
+}
+
+@article{yantian-self-expl-ws,
+  title={Learning from Ambiguous Demonstrations with Self-Explanation Guided Reinforcement Learning},
+  author={Zha, Yantian and Guan, Lin and Kambhampati, Subbarao},
+  journal={AAAI-22 Workshop on Reinforcement Learning in Games},
   year={2021}
 }
+
 ```
