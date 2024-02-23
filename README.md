@@ -1,5 +1,7 @@
 # Welcome to SERLfD: Empowering Robots with Self-Explanation
 
+[AAAI Paper]() | [arXiv](https://arxiv.org/pdf/2110.05286.pdf) | [Slides](https://yantianzha.github.io/serlfd_slides/) | [Poster](https://drive.google.com/file/d/1zKHdL0VtIWyg_MQL9GQQ3NlVyxTJboZl/view?usp=sharing) | [AAAI Talk]()
+
 Are you prepared for the next groundbreaking leap in robotics? Picture robots not just executing tasks but autonomously comprehending their decisions. Welcome to the realm of SERLfD – Self-Explanation for Reinforcement Learning from Demonstrations.
 
 SERLfD serves as the bridge between machines and humans, endowing robots with introspective capabilities grounded in human concepts. In simpler terms, it enables robots not only to learn tasks from human demonstrations but also to identify crucial concepts within these demonstrations, determining success or failure, thus fostering transparency and understanding.
