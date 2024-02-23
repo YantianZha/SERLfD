@@ -26,7 +26,7 @@ SERLfD seamlessly integrates the strengths of Reinforcement Learning from Demons
   2. **Self-Explainer (Discriminator):** Trained to distinguish between successful and unsuccessful experiences.
 
 ### Architecture
-![SERLfD Framework](figures/SERLfD_arch1.pdf)
+<embed src="figures/SERLfD_arch1.pdf" type="application/pdf">
 
 - **Components:**
   - **SE-Nets:** Self-Explanation Networks map states to sets of utility weights (\textbf{\textit{u}}) corresponding to grounded predicate values.
