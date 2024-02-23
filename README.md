@@ -26,7 +26,6 @@ SERLfD seamlessly integrates the strengths of Reinforcement Learning from Demons
   2. **Self-Explainer (Discriminator):** Trained to distinguish between successful and unsuccessful experiences.
 
 ### Architecture
-
 ![SERLfD Framework](figures/SERLfD_arch1.pdf)
 
 - **Components:**
@@ -77,6 +76,19 @@ In essence, SERLfD integrates RLfD with self-explanation learning, enhancing rob
     <img src="figures/SERL_gif_Pacman.gif" alt="envs" width="600" />
 </p>
 
+## Learning Curves
+
+<p align="center">
+    <img src="figures/result_robot.PNG" alt="envs" width="1000" />
+</p>
+
+<div class="col-sm-6 col-xs-6">
+  <p><font size="+1"> Self-Explanation Guided Robot Learning</font></p>
+  <br />
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w5nGYOdVMiA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </iframe>
+</div>
+
 ## Installation
 
 - `git clone https://github.com/YantianZha/SERLfD.git`
@@ -126,18 +138,7 @@ CUDA_VISIBLE_DEVICES=1 nohup python3 run_fetch_push_v0p.py --algo sacfd --episod
 CUDA_VISIBLE_DEVICES=1 nohup python3 run_fetch_push_v0p.py --algo sesacfd_v2_s --episode-num 3000 --off-render --max-episode-steps 50 --demo-path /data/Yantian/datasets/SERL/Fetch/Push-v0 --log > /data/Yantian/nohup_sesacfd_v2_s.out &
 ```
 
-## Learning Curves
 
-<p align="center">
-    <img src="figures/result_robot.PNG" alt="envs" width="1000" />
-</p>
-
-<div class="col-sm-6 col-xs-6">
-  <p><font size="+1"> Self-Explanation Guided Robot Learning</font></p>
-  <br />
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/w5nGYOdVMiA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-  </iframe>
-</div>
         
 ## Citation
 
